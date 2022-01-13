@@ -1,0 +1,179 @@
+<header class="header">
+  <h1 class="sr-only">Интернет магазин фрешок</h1>
+  <nav class="navigation">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-inner">
+          <ul class="services">
+            <li class="services__item services__item--delivery">
+              <a href="#" class="services__link">
+                Адрес и время доставки
+              </a>
+            </li>
+            <li class="services__item services__item--hotline">
+              <a href="#" class="services__link">
+                Горячая линия 24/7
+              </a>
+            </li>
+          </ul>
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                доставка
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                о нас
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                новости
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <div class="header__bottom-inner">
+          <a class="logo logo__header" href="#">
+            <img class="logo__img" src="images/logo.svg" alt="Логотип" width="200" height="60">
+          </a>
+          <div class="dropdown-menu">
+            <button class="dropdown-menu__btn" type="button">
+              Каталог продуктов
+            </button>
+            <ul class="dropdown-menu__list">
+              <li class="dropdown-menu__item">
+                <a class="dropdown-menu__link" href="#">
+                  Овощи и фрукты
+                </a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a class="dropdown-menu__link" href="#">
+                  Баккалея
+                </a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a class="dropdown-menu__link" href="#">
+                  Молочные продукты
+                </a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a class="dropdown-menu__link" href="#">
+                  Хлеб
+                </a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a class="dropdown-menu__link" href="#">
+                  Мясо
+                </a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a class="dropdown-menu__link" href="#">
+                  Колбаса
+                </a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a class="dropdown-menu__link" href="#">
+                  Рыба
+                </a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a class="dropdown-menu__link" href="#">
+                  Алкоголь
+                </a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a class="dropdown-menu__link" href="#">
+                  Напитки
+                </a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a class="dropdown-menu__link" href="#">
+                  Торты
+                </a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a class="dropdown-menu__link" href="#">
+                  Мясо
+                </a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a class="dropdown-menu__link" href="#">
+                  Чай, Кофе
+                </a>
+              </li>
+            </ul>
+          </div>
+          <form class="search-form search-form--header">
+            <label class="sr-only" for="header-input">Поиск товаров</label>
+            <input class="search-form__input search-form__input--header" id="header-input" type="search"
+              name="header-search" required placeholder="найти в магазине">
+            <button class="search-form__button search-form__button--header" type="submit">
+              поиск
+              <span class="sr-only">Поиск необходимого товара</span>
+            </button>
+          </form>
+          <div class="user-nav">
+            <a class="user-nav__link user-nav__link--user" href="#">
+              <span class="sr-only">Меню пользователя</span>
+            </a>
+            <button class="user-nav__link user-nav__link--heart">
+              <span>0</span>
+              <span class="sr-only">Понравившиеся товары</span>
+            </button>
+            <button class="user-nav__link user-nav__link--cart">
+              <span class="cart-number">0</span>
+              <span class="sr-only">Добавленные в корзину товары</span>
+            </button>
+          </div>
+          <div class="cart">
+            <div class="cart__top">
+              <h3 class="cart__title">
+                Корзина
+              </h3>
+              <button class="cart__clear" type="button">
+                очистить корзину
+              </button>
+              <a class="cart__close" href="#"></a>
+            </div>
+            <div class="cart__content">
+              <ul class="cart__content-list">
+                <!-- <li class="cart__content-item">
+                  <img src="" alt="">
+                  <article class="cart__article">
+                    <div class="article__text">
+                      <h3 class="article__title"></h3>
+                      <div class="article__price"></div>
+                    </div>
+                    <div class="product__count">
+                      <button class="count__btn" data-direction="minus" type="button"></button>
+                      <input class="count" type="text" value="${counter}">
+                      <button class="count__btn" data-direction="plus" type="button"></button>
+                    </div>
+                  </article>
+                  <a class="article__close" href="#"></a>
+                </li> -->
+              </ul>
+            </div>
+            <div class="cart__price">
+              <div class="price__text">
+                товаров на сумму
+              </div>
+              <div class="fullprice">
+                0 руб
+              </div>
+            </div>
+            <button class="cart__order" type="button">
+              Оформить заказ
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

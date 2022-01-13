@@ -1,0 +1,224 @@
+<section class="top-product" data-ref="container-1">
+  <div class="container">
+    <h2 class="top-product__title title">Топовые товары</h2>
+    <div class="products-filter">
+      <ul class="products-filter__list products-filter__list-top-product">
+        <li class="products-filter__item products-filter__item-top-product">
+          <button class="products-filter__button" data-filter="all" type="button">
+            Все товары
+          </button>
+        </li>
+        <li class="products-filter__item products-filter__item-top-product">
+          <button class="products-filter__button" data-filter=".category-a" type="button">
+            Фрукты
+          </button>
+        </li>
+        <li class="products-filter__item products-filter__item-top-product">
+          <button class="products-filter__button" data-filter=".category-b" type="button">
+            Овощи
+          </button>
+        </li>
+        <li class="products-filter__item products-filter__item-top-product">
+          <button class="products-filter__button" data-filter=".category-c" type="button">
+            Напитки
+          </button>
+        </li>
+        <li class="products-filter__item products-filter__item-top-product">
+          <button class="products-filter__button" data-filter=".category-d" type="button">
+            Баккалея
+          </button>
+        </li>
+      </ul>
+    </div>
+    <ul class="top-product__list">
+      <li class="top-product__item mix category-a" data-id="pineapple">
+        <article class="product-card">
+          <span class="badge badge--green">новинка</span>
+          <span class="badge badge--red">-50%</span>
+          <button class="product-card__like" type="button"></button>
+          <a class="product-card__img" href="#">
+            <img src="images/product/pineapple.jpg" alt="Ананас" width="300" height="225">
+          </a>
+          <h3 class="product-card__title">
+            Ананас, 1кг
+          </h3>
+          <div class="product-card__price">
+            <div class="product__price product__price--old">1999 ₽</div>
+            <div class="product__price product__price--new">999 ₽</div>
+          </div>
+          <div class="count">
+            <button class="count__btn" data-direction="minus" type="button">-</button>
+            <input class="count__input" type="text" value="1">
+            <button class="count__btn" data-direction="plus" type="button">+</button>
+          </div>
+          <button class="product-card__cart" type="button">
+            <span class="sr-only">Добавить товар в корзину</span>
+          </button>
+        </article>
+      </li>
+      <li class="top-product__item mix category-a" data-id="lemon">
+        <article class="product-card">
+          <button class="product-card__like" type="button"></button>
+          <a class="product-card__img" href="#">
+            <img src="images/product/lemon.jpg" alt="Лимон" width="300" height="225">
+          </a>
+          <h3 class="product-card__title">
+            Лимон, 1кг
+          </h3>
+          <div class="product-card__price">
+            <div class="product__price product__price--new">199 ₽</div>
+          </div>
+          <div class="count">
+            <button class="count__btn" data-direction="minus" type="button">-</button>
+            <input class="count__input" type="text" value="1">
+            <button class="count__btn" data-direction="plus" type="button">+</button>
+          </div>
+          <button class="product-card__cart" type="button">
+            <span class="sr-only">Добавить товар в корзину</span>
+          </button>
+        </article>
+      </li>
+      <li class="top-product__item mix category-d" data-id="dragon fruit">
+        <article class="product-card">
+          <span class="badge badge--orange">хит</span>
+          <button class="product-card__like" type="button"></button>
+          <a class="product-card__img" href="#">
+            <img src="images/product/dragon fruit.jpg" alt="Питахайа" width="300" height="225">
+          </a>
+          <h3 class="product-card__title">
+            Питахайя красная с белой мякотью, 1шт
+          </h3>
+          <div class="product-card__price">
+            <div class="product__price product__price--new">1019 ₽</div>
+          </div>
+          <div class="count">
+            <button class="count__btn" data-direction="minus" type="button">-</button>
+            <input class="count__input" type="text" value="1">
+            <button class="count__btn" data-direction="plus" type="button">+</button>
+          </div>
+          <button class="product-card__cart" type="button">
+            <span class="sr-only">Добавить товар в корзину</span>
+          </button>
+        </article>
+      </li>
+      <li class="top-product__item mix category-d" data-id="ketchup">
+        <article class="product-card">
+          <button class="product-card__like" type="button"></button>
+          <a class="product-card__img" href="#">
+            <img src="images/product/ketchup.jpg" alt="Кетчуп детский" width="300" height="225">
+          </a>
+          <h3 class="product-card__title">
+            Кетчуп томатный детский органический Bio-Zentrale 500мл, 1 шт
+          </h3>
+          <div class="product-card__price">
+            <div class="product__price product__price--new">600 ₽</div>
+          </div>
+          <div class="count">
+            <button class="count__btn" data-direction="minus" type="button">-</button>
+            <input class="count__input" type="text" value="1">
+            <button class="count__btn" data-direction="plus" type="button">+</button>
+          </div>
+          <button class="product-card__cart" type="button">
+            <span class="sr-only">Добавить товар в корзину</span>
+          </button>
+        </article>
+      </li>
+      <li class="top-product__item mix category-b" data-id="carrot">
+        <article class="product-card">
+          <span class="badge badge--orange">хит</span>
+          <button class="product-card__like" type="button"></button>
+          <a class="product-card__img" href="#">
+            <img src="images/product/carrot.jpg" alt="Морковь" width="300" height="225">
+          </a>
+          <h3 class="product-card__title">
+            Морковь молодая с бабушкиной грядки, 1кг
+          </h3>
+          <div class="product-card__price">
+            <div class="product__price product__price--new">49 ₽</div>
+          </div>
+          <div class="count">
+            <button class="count__btn" data-direction="minus" type="button">-</button>
+            <input class="count__input" type="text" value="1">
+            <button class="count__btn" data-direction="plus" type="button">+</button>
+          </div>
+          <button class="product-card__cart" type="button">
+            <span class="sr-only">Добавить товар корзину</span>
+          </button>
+        </article>
+      </li>
+      <li class="top-product__item mix category-c" data-id="juice">
+        <article class="product-card">
+          <span class="badge badge--red">-30%</span>
+          <button class="product-card__like" type="button"></button>
+          <a class="product-card__img" href="#">
+            <img src="images/product/juice.jpg" alt="Сокосодержащий Напиток" width="300" height="225">
+          </a>
+          <h3 class="product-card__title">
+            Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин безалкогольн...
+          </h3>
+          <div class="product-card__price">
+            <div class="product__price product__price--old">299 ₽</div>
+            <div class="product__price product__price--new">199 ₽</div>
+          </div>
+          <div class="count">
+            <button class="count__btn" data-direction="minus" type="button">-</button>
+            <input class="count__input" type="text" value="1">
+            <button class="count__btn" data-direction="plus" type="button">+</button>
+          </div>
+          <button class="product-card__cart" type="button">
+            <span class="sr-only">Добавито товар в корзину</span>
+          </button>
+        </article>
+      </li>
+      <li class="top-product__item mix category-c" data-id="coffee">
+        <article class="product-card">
+          <span class="badge badge--green">новинка</span>
+          <button class="product-card__like" type="button"></button>
+          <a class="product-card__img" href="#">
+            <img src="images/product/coffee.jpg" alt="Кофе с коноплей" width="300" height="225">
+          </a>
+          <h3 class="product-card__title">
+            Кофе с коноплей органический Caffé Salomoni 250г
+          </h3>
+          <div class="product-card__price">
+            <div class="product__price product__price--new">877 ₽</div>
+          </div>
+          <div class="count">
+            <button class="count__btn" data-direction="minus" type="button">-</button>
+            <input class="count__input" type="text" value="1">
+            <button class="count__btn" data-direction="plus" type="button">+</button>
+          </div>
+          <button class="product-card__cart" type="button">
+            <span class="sr-only">Добавито товар в корзину</span>
+          </button>
+        </article>
+      </li>
+      <li class="top-product__item mix category-c" data-id="paprik">
+        <article class="product-card">
+          <span class="badge badge--green">новинка</span>
+          <button class="product-card__like" type="button"></button>
+          <a class="product-card__img" href="#">
+            <img src="images/product/paprik.jpg" alt="Перец" width="300" height="225">
+          </a>
+          <h3 class="product-card__title">
+            Перец оранжевый, 1кг
+          </h3>
+          <div class="product-card__price">
+            <div class="product__price product__price--new">349 ₽</div>
+          </div>
+          <div class="count">
+            <button class="count__btn" data-direction="minus" type="button">-</button>
+            <input class="count__input" type="text" value="1">
+            <button class="count__btn" data-direction="plus" type="button">+</button>
+          </div>
+          <button class="product-card__cart" type="button">
+            <span class="sr-only">Добавито товар в корзину</span>
+          </button>
+        </article>
+      </li>
+    </ul>
+    <button class="top-product__button btn" type="button">
+      Показать еще
+    </button>
+  </div>
+</section>

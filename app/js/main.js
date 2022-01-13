@@ -9,18 +9,16 @@ $(function () {
 
 //Каталог товаров
 let body = document.querySelector('body'),
-  catalogBtn = document.querySelector('.dropdawn-menu__btn'),
-  catalogArrow = document.querySelector('.dropdawn-menu__arrow'),
-  catalogList = document.querySelector('.dropdawn-menu__list'),
+  catalogBtn = document.querySelector('.dropdown-menu__btn'),
+  catalogList = document.querySelector('.dropdown-menu__list'),
   userNavLink = document.querySelector('.user-nav__link--cart'),
   cart = document.querySelector('.cart'),
   cartClose = document.querySelector('.cart__close');
 
 catalogBtn.addEventListener('click', function () {
-  this.classList.toggle('dropdawn-menu--active');
-  catalogArrow.classList.toggle('dropdawn-menu__arrow--active');
+  this.classList.toggle('dropdown-menu--active');
 
-  if (this.classList.contains('dropdawn-menu--active')) {
+  if (this.classList.contains('dropdown-menu--active')) {
     catalogBtn.style.borderBottomRightRadius = '0';
     catalogBtn.style.borderBottomLeftRadius = '0';
     catalogList.style.opacity = '1';
@@ -101,7 +99,7 @@ function cartCulcPrice() {
   const cartItems = document.querySelectorAll('.cart__content-item');
   let totalPrice = 0;
   cartItems.forEach(cartItem => {
-    const count = cartItem.querySelector('.count');
+    const count = cartItem.querySelector('.count__input');
     const articlePrice = cartItem.querySelector('.article__price');
     const currentPrice = parseInt(count.value) * parseInt(articlePrice.textContent);
     console.log("текущая цена", currentPrice);
@@ -120,9 +118,9 @@ function generationPrice(img, title, price, id, counter) {
                 <h3 class="article__title">${title}</h3>
                 <div class="article__price">${price}</div>
               </div>
-              <div class="product__count">
+              <div class="count">
               <button class="count__btn" data-direction="minus" type="button">-</button>
-              <input class="count" type="text" value = "${counter}">
+              <input class="count__input" type="text" value = "${counter}">
               <button class="count__btn" data-direction="plus" type="button">+</button>
             </div>
             </article>
@@ -133,7 +131,7 @@ function generationPrice(img, title, price, id, counter) {
 
 //Функция удаление товара из корзины
 function productDelete(productItem) {
-  const count = productItem.querySelector('.count');
+  const count = productItem.querySelector('.count__input');
   let currentPrice = parseInt(priceWithout(productItem.querySelector('.article__price').textContent)) * parseInt(count.value);
   console.log(currentPrice);
   minusPrice2(currentPrice);
@@ -162,11 +160,11 @@ productItemCarts.forEach(productItemCart => {
     let img = parent.querySelector('.product-card__img img').getAttribute('src');
     let title = parent.querySelector('.product-card__title').textContent;
     let priceNumber = parseInt(priceWithout(parent.querySelector('.product__price--new').textContent));
-    let counter = parent.querySelector('.count').value;
+    let counter = parent.querySelector('.count__input').value;
 
     const itemInCart = productList.querySelector(`[data-id= "${id}"]`);
     if (itemInCart) {
-      counterElement = itemInCart.querySelector('.count');
+      counterElement = itemInCart.querySelector('.count__input');
       counterElement.value = parseInt(counter) + parseInt(counterElement.value);
       articlePrice = document.querySelector('.article__price').textContent;
     } else {
@@ -177,7 +175,7 @@ productItemCarts.forEach(productItemCart => {
     }
 
     cartCulcPrice();
-    parent.querySelector('.count').value = 1;
+    parent.querySelector('.count__input').value = 1;
 
     //Вызов функций
     // dontAdd(id, counter);
@@ -203,8 +201,8 @@ window.addEventListener('click', function (e) {
   let count;
 
   if (e.target.dataset.direction == 'minus' || e.target.dataset.direction == 'plus') {
-    parent = e.target.closest('.product__count');
-    count = parent.querySelector('.count');
+    parent = e.target.closest('.count');
+    count = parent.querySelector('.count__input');
   }
 
   if (e.target.dataset.direction == 'minus') {
@@ -242,7 +240,14 @@ document.addEventListener('click', function (e) {
   }
 })
 
+var containerEl1 = document.querySelector('[data-ref="container-1"]');
+var containerEl2 = document.querySelector('[data-ref="container-2"]');
 
+var config = {
+  controls: {
+    scope: 'local'
+  }
+};
 
-
-var mixer = mixitup('.top-product__list');
+var mixer1 = mixitup(containerEl1, config);
+var mixer2 = mixitup(containerEl2, config);
